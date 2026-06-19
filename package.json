@@ -17,13 +17,17 @@
     "./tailwind.config": {
       "import": "./tailwind.config.ts",
       "types": "./tailwind.config.ts"
-    }
+    },
+    "./brand/icon.svg": "./src/brand/icon.svg",
+    "./brand/logo.svg": "./src/brand/logo.svg",
+    "./brand/logo-square.svg": "./src/brand/logo-square.svg"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "src/styles",
+    "src/brand",
     "tailwind.config.ts"
   ],
   "scripts": {

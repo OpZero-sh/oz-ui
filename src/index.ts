@@ -228,3 +228,6 @@ export { Callout } from "./components/mdx/callout";
 export { Chart as MdxChart } from "./components/mdx/chart";
 export { Stats } from "./components/mdx/stats";
 export { MdxTabs } from "./components/mdx/tabs";
+
+// Brand
+export { BrandLogo, BrandName } from "./components/brand";

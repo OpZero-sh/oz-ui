@@ -1,0 +1,80 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes neural-dash {
+to { stroke-dashoffset: -46; }
+}
+@keyframes core-flash {
+0%, 100% {
+opacity: 0.5;
+transform: scale(0.85);
+filter: blur(2px);
+}
+50% {
+opacity: 1;
+transform: scale(1.25);
+filter: blur(0px) drop-shadow(0 0 15px #fff) drop-shadow(0 0 25px #00F5FF);
+}
+}
+.neural-border {
+animation: neural-dash 4s linear infinite;
+stroke-linecap: round;
+}
+.core {
+animation: core-flash 2s ease-in-out infinite;
+transform-origin: center;
+transform-box: fill-box;
+}
+.text-main {
+font-family: sans-serif;
+font-weight: 800;
+font-size: 56px;
+letter-spacing: -0.05em;
+}
+.text-sub {
+font-family: sans-serif;
+font-weight: 900;
+font-size: 14px;
+letter-spacing: 0.4em;
+text-transform: uppercase;
+fill: #64748b;
+}
+</style>
+
+<defs>
+<linearGradient id="neural-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#00F5FF" />
+<stop offset="100%" stop-color="#8B5CF6" />
+</linearGradient>
+</defs>
+
+<!-- Background (Optional for transparency, usually transparent is better for GitHub) -->
+
+<rect width="400" height="400" fill="none" />
+
+<!-- Icon Section Centered -->
+
+<g id="icon" transform="translate(200, 160)">
+<circle
+cx="0" cy="0" r="100"
+stroke="url(#neural-grad)"
+stroke-width="12"
+stroke-dasharray="8 15"
+class="neural-border"
+/>
+<!-- The Core animated circle -->
+<circle
+cx="0" cy="0" r="18"
+fill="white"
+class="core"
+/>
+</g>
+
+<!-- Text Section Stacked -->
+
+<g transform="translate(200, 310)">
+<text text-anchor="middle" class="text-main">
+<tspan fill="#F8FAFC">Op</tspan><tspan fill="#00F5FF">Zero</tspan>
+</text>
+<text y="30" text-anchor="middle" class="text-sub">AI Deploy Engine</text>
+</g>
+</svg>
